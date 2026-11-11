@@ -1,0 +1,27 @@
+{
+  "floor": {
+    "rows": ["A", "B", "C"],
+    "columns": 10
+  },
+  "files": {
+    "seed_members": "data/seed/members.csv",
+    "seed_menu": "data/seed/menu.csv",
+    "seed_bookings": "data/seed/bookings.csv",
+    "journal": "data/journal.dat"
+  },
+  "hash_table": {
+    "buckets": 16
+  },
+  "bookings": {
+    "reference_prefix": "BS-",
+    "first_reference_number": 10400,
+    "max_party_size": 12,
+    "sources": ["in person", "email", "phone"]
+  },
+  "journal": {
+    "recent_entries": 10
+  },
+  "staff": {
+    "codes": ["ST001", "ST002", "ST003", "ST004"]
+  }
+}
