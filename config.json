@@ -23,5 +23,8 @@
   },
   "staff": {
     "codes": ["ST001", "ST002", "ST003", "ST004"]
+  },
+  "gui": {
+    "tables_per_line": 10
   }
 }

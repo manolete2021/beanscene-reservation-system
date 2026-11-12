@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Mac folder file and the journal written while the app runs
+.DS_Store
+data/journal.dat
