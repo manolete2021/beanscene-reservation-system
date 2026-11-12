@@ -72,6 +72,7 @@ def append_entry(journal, staff_code, action, booking_reference):
     entry = make_journal_entry(number, timestamp, staff_code, action, booking_reference, False)
     journal["file"].seek(number * RECORD_SIZE)
     journal["file"].write(pack_entry(entry))
+    # Save the journal record immediately.
     journal["file"].flush()
     return entry
 

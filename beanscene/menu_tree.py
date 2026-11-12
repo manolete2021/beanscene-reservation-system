@@ -25,6 +25,7 @@ def add_dish(menu, dish):
         menu["size"] = 1
         return
 
+    # Ignore capitals when comparing dish names.
     name = dish["name"].lower()
     node = menu["root"]
     while True:

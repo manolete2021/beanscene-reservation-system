@@ -1,8 +1,7 @@
 """Floor plan screen: the thirty tables, each marked free or occupied.
 
-Uses the floor plan module (1.1): read_occupant, assign_booking,
-release_table and occupancy. This screen only shows the floor and passes
-what the user clicks and types to those functions.
+Seat calls operations.seat(). Free calls operations.complete().
+The screen then draws the tables from the floor data.
 """
 
 import tkinter as tk
@@ -75,6 +74,7 @@ def seat_booking():
         reference = screen["reference"].get().strip().upper()
         if reference == "":
             raise ValueError("Enter a booking reference.")
+        # Keep the booking, table, journal and undo in sync.
         operations.seat(screen["state"], reference, code)
     except ValueError as error:                 # refused: say why, change nothing
         gui_look.show_error(screen["bar"], str(error))

@@ -1,10 +1,8 @@
-"""Bookings screen: for now, only the member part (1.2).
+"""Bookings screen: members, bookings, the journal and undo.
 
-When a member books, their details are filled in automatically: the member
-number is found with the binary search (binary_search_by_number), and the
-directory is listed in surname order (directory["by_surname"], sorted by
-the custom sort). New bookings, find by reference and status changes are
-added to this screen in 1.5; the journal and Undo in 1.6.
+The member directory is searched by number and listed in surname order.
+Staff can create a booking, find one, and change its status. The journal
+lists recent changes, and Undo reverses the latest one.
 """
 
 import tkinter as tk

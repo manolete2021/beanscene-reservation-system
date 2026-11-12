@@ -116,6 +116,7 @@ def start_listener(incoming_queue):
     global _server, _thread
 
     def accept_loop(server):
+        """Receive TCP messages and place valid ones in the queue."""
         # accept waits for a Tablet. The timeout lets the loop notice
         # stop_listener. It is not a busy loop: the thread sleeps inside
         # accept until a connection arrives or the timeout ends.
